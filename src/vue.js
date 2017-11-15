@@ -12,6 +12,7 @@ function Vue(options) {
 }
 
 Vue.prototype = {
+	// 数据代理
 	_proxyData: function(key, setter, getter) {
 		var me = this;
 		setter = setter || 
